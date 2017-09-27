@@ -51,12 +51,12 @@ body {
 	text-align: center;
 }
 
-a:link{
-	color:#0f8;
+a:link, a:visited {
+	color: #0f8;
 }
 
-a:visted {
-	color:#0f8;
+a:hover {
+	color: #DC3023;
 }
 
 @keyframes typing {
@@ -68,7 +68,6 @@ a:visted {
 	from, to { border-color: transparent }
 	50% { border-color: orange }
 }
-
 
  /*
  adapted from:
