@@ -55,6 +55,10 @@ a:link{
 	color:#0f8;
 }
 
+a:visted {
+	color:#0f8;
+}
+
 @keyframes typing {
 	from { width: 0 }
 	to { width: 100% }
