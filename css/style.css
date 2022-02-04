@@ -48,11 +48,6 @@ body {
 	right: 0;
 }
 
-.construction {
-	font-size: 36px;
-	margin: 0 auto;
-}
-
 #container {
 	min-height: 100%;
 	position:relative;
