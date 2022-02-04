@@ -4,24 +4,53 @@ body {
 	padding-top: 5em;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	margin: 0;
 	padding: 0;
 	height: 90%;
 	font-family: courier new, monospace;
-
 }
 
-.welcome h1 {
-  color: #0f8;
-  font-size: 24px;
-  overflow: hidden;
-  border-right: .5em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation: 
-    typing 2.1s steps(42, end),
-    blink-caret .84s step-end infinite;
+.welcome,
+.welcome > span {
+	display: inline-block;
+}
+
+.welcome > span {
+	color: #0f8;
+	font-size: 36px;
+	overflow: hidden;
+	border-right: .5em solid transparent;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	position: relative;
+	overflow: hidden;
+	padding-right: 4px;
+}
+
+.welcome > span::before {
+	content: '';
+	position: absolute;
+	border-left: .15em solid #00aeff;
+	background: #333;
+	height: 1.1em;
+	right: -15px;
+	width: 100%;
+	animation: blink-caret .75s step-end infinite, typing 2s steps(30, end) forwards;
+}
+
+.welcome > span:nth-of-type(2)::before {
+	animation-delay: 2s;
+}
+
+.welcome > span:last-of-type::before {
+	right: 0;
+}
+
+.construction {
+	font-size: 36px;
+	margin: 0 auto;
 }
 
 #container {
@@ -42,11 +71,11 @@ body {
 
 #footer {
 	color: #0f8;
-	font-size: 18px;
-	position: absolute;
-	left: -160px; 
+	font-size: 24px;
+	position: relative;
+	margin: auto;
 	top: 75%;
-	width: 320px;
+	width: 100%;
 	height: 15px;
 	text-align: center;
 }
@@ -60,8 +89,8 @@ a:hover {
 }
 
 @keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
+	from { width: 100% }
+	to { width: 0 }
 }
 
 @keyframes blink-caret {
@@ -69,9 +98,10 @@ a:hover {
 	50% { border-color: orange }
 }
 
- /*
- adapted from:
+/*
+adapted from:
 	https://stackoverflow.com/a/40868333/3658031
+	https://stackoverflow.com/a/57984324
  	http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
  	https://codepen.io/geoffgraham/pen/jrWwWM
- */
+*/
