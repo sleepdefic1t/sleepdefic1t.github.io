@@ -1,37 +1,117 @@
 <!DOCTYPE html>
-<html>
-	<div id="container">
-		<div id="header">
-			<meta charset="UTF-8">
-			<title>sleepdefic1t</title>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-			<link rel="stylesheet" href="css/style.css">
-		</div>
-		<div id="body">
-			<p class="welcome">
-				<span>We are the music makers,</span>
-				<br>
-				<span>the dreamers of dreams...</span>
-			</p>
-		</div>
-		<div id="footer">
-			<f1>
-				<span>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>sl33p</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				list-style: none;
+				text-decoration: none;
+				font-family: 'Roboto', sans-serif;
+			}
+
+			:root {
+				/* violet */
+				--primary-color: 111, 76, 255;
+				/* white */
+				--text-color: 256, 256, 256;
+			}
+
+			body {
+				background-color: #000000;
+				background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+			}
+
+			body #wrapper {
+				min-height: 100vh;
+				max-width: 720px;
+				margin: auto;
+				text-align: center;
+				font-weight: bold;
+			}
+
+			body #wrapper .text-effect {
+				background: linear-gradient(to right, #30CFD0, #c43ad6);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+			}
+
+			body #wrapper .header {
+				padding: 1.5rem 0;
+			}
+
+			body #wrapper .header .avatar {
+				width: 100px;
+				height: 100px;
+				margin-bottom: 10px;
+				border-radius: 50%;
+			}
+
+			body #wrapper li a {
+				display: block;
+				color: white;
+				background-color: rgba(var(--primary-color), 0.15);
+				border: 1px solid rgba(var(--primary-color), 0.25);
+				color: rgba(var(--text-color), 0.8);
+				border-radius: 25px;
+				padding: 18px 57px;
+				transition: 0.3s;
+			}
+
+			body #wrapper li a:hover {
+				background-color: rgba(var(--primary-color), 0.15);
+				border: 1px solid rgba(var(--primary-color), 0.25);
+				color: rgba(var(--text-color), 0.8);
+				transition: 0.3s;
+			}
+
+			body #wrapper li {
+				margin: .9rem;
+			}
+
+			body #wrapper .spacer {
+				display: block;
+				padding: 1.5rem 0;
+			}
+
+			body #wrapper .footer {
+				word-break: normal;
+				margin-bottom: 1rem;
+			}
+		</style>
+	</head>
+	<body class="bg-blur">
+		<div id="wrapper">
+			<div class="header">
+				<img class="avatar" src="https://ipfs.io/ipfs/QmXGbFqiGKpG9VDUK74tN5qw26rhqaYv1Q73iy9HEqUUAn">
+				<br></br>
+				<div class="text-effect">
+					sl33p.eth
+				</div>
+			</div>
+			<div>
+				<li>
 					<a href="https://github.com/sleepdefic1t" target="_blank" rel="noopener noreferrer">github.com/sleepdefic1t</a>
-				</span>
-				<br>
-				<span>
+				</li>
+				<li>
 					<a href="https://mirror.xyz/sl33p.eth" target="_blank" rel="noopener noreferrer">mirror.xyz/sl33p.eth</a>
-				</span>
-				<br>
-				<span>
+				</li>
+				<li>
 					<a href="https://twitter.com/sleepdefic1t" target="_blank" rel="noopener noreferrer">twitter.com/sleepdefic1t</a>
-				</span>
-				<br>
-				<span>
-					<a href="mailto:sl33p.eth@pm.me">sl33p.eth@pm.me</a>
-				</span>
-			</f1>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/sleepdefic1t" target="_blank" rel="noopener noreferrer">linkedin.com/in/sleepdefic1t</a>
+				</li>
+			</div>
+			<div class="spacer"></div>
+			<div class="footer text-effect"> We are the music makers, the dreamers of dreams... </div>
 		</div>
-	</div>
+	</body>
 </html>
