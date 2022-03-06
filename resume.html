@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+    		<link rel="stylesheet" href="debug-.css">
 
     <title>Simon Downey</title>
 
@@ -21,9 +22,11 @@
       .avatar {
         border-radius: 50%;
         height: 100px;
-        margin-bottom: 10px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: -15px;
         width: 100px;
-        float: right;
+        float: left;
       }
       a {
         color: #2ecc71;
@@ -66,6 +69,10 @@
       .maintained {
         text-indent: 10px;
       }
+      .article {
+        text-indent: 10px;
+        font-style: italic;  
+      }
       blockquote {
         border-left: 5px solid #e7e9ec;
         font-size: 14px;
@@ -95,12 +102,12 @@
       #header {
         color: black;
         background: #f4f6f6;
-        padding: 50px 0;
-        margin-bottom: 30px;
+        padding: 40px 0;
       }
       #header h2 {
         color: #95a5a6;
         font-size: 24px;
+        justify-content: center;
       }
       #content h3 {
         color: #f1c40f;
@@ -122,21 +129,6 @@
         font-weight: bold;
         margin-bottom: 8px;
       }
-      #education .area {
-        font-weight: bold;
-      }
-      #education .area:before {
-        content: "\f0d7";
-        font: 16px Octicons;
-        margin-right: 6px;
-      }
-      #education .studyType {
-        margin-left: 25px;
-      }
-      #awards .summary,
-      #publications .summary {
-        margin-top: 8px;
-      }
       #publications .website a:before {
         content: attr(href);
       }
@@ -144,7 +136,7 @@
       @media (min-width: 480px) {
         .strike-through {
           border-top: 1px solid #f4f6f6;
-          height: 20px;
+          height: 30px;
           margin-top: 12px;
           margin-bottom: -2px;
           position: relative;
@@ -192,10 +184,6 @@
         .strike-through span {
           display: block;
         }
-        #header {
-          margin-bottom: 10px;
-          padding: 40px 0;
-        }
         #actions {
           display: none;
         }
@@ -205,17 +193,9 @@
   <body>
     <header id="header">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-9 col-sm-push-3">
-            <h1>
-              Simon Downey
-              <img class="avatar" src="https://ipfs.io/ipfs/Qmcdtiqgd8RLkrbhRDsQbdQDPMu9EsKnYE6Y5JFsZPUGQY">
-            </h1>
-            <h2>
-              Developer
-            </h2>
-          </div>
-        </div>
+        <img class="avatar" src="https://ipfs.io/ipfs/Qmcdtiqgd8RLkrbhRDsQbdQDPMu9EsKnYE6Y5JFsZPUGQY">
+        <h1>Simon Downey</h1>
+        <h2>Developer</h2>
       </div>
     </header>
     <div id="content" class="container">
@@ -254,17 +234,17 @@
               </strong>
               <div class="username">
                 <div class="url">
-                  <a href="https://github.com/sleepdefic1t">sleepdefic1t</a>
+                  <a href="https://github.com/sleepdefic1t">github.com/sleepdefic1t</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <strong class="network">
-                Mirror
+                Mirror Blog
               </strong>
               <div class="username">
                 <div class="url">
-                  <a href="https://mirror.xyz/sl33p.eth">sl33p.eth</a>
+                  <a href="https://mirror.xyz/sl33p.eth">mirror.xyz/sl33p.eth</a>
                 </div>
               </div>
             </div>
@@ -274,7 +254,7 @@
               </strong>
               <div class="username">
                 <div class="url">
-                  <a href="https://twitter.com/sleepdefic1t">@sleepdefic1t</a>
+                  <a href="https://twitter.com/sleepdefic1t">twitter.com/sleepdefic1t</a>
                 </div>
               </div>
             </div>
@@ -284,7 +264,7 @@
               </strong>
               <div class="username">
                 <div class="url">
-                  <a href="https://www.linkedin.com/in/sleepdefic1t">sleepdefic1t</a>
+                  <a href="https://www.linkedin.com/in/sleepdefic1t">linkedin.com/in/sleepdefic1t</a>
                 </div>
               </div>
             </div>
@@ -300,13 +280,15 @@
           <div class="row">
             <div class="col-sm-12">
               <h4 class="strike-through">
-                <span>ARK Ecosystem</span>
+                <span>
+                  <a href="https://ark.io/blog/arks-newest-addition-to-the-hardware-and-iot-development-team">ARK Ecosystem</a>
+                </span>
               </h4>
-              <span class="date">
-                2018-04 - 2022-03
-              </span>
               <div class="position">
-                Developer
+                IoT Lead / Developer / Writer &ensp;|&ensp;
+                  <span class="date">
+                    2018-04 - 2022-03
+                  </span>
               </div>
               <div class="summary">
                 <p></p>
@@ -316,26 +298,58 @@
               </h4>
               <ul class="highlights">
                 <li class="bullet">Maintained:
-                <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/ledger" target="_blank">ARK Ledger App</a></li>
-                <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/ledger-transport" target="_blank">ARK Ledger Transport</a></li>
-                <li class="bullet maintained"><a href="https://github.com/ArkEcosystemArchive/cpp-client" target="_blank">ARK C++ Client SDK</a></li>
-                <li class="bullet maintained"><a href="https://github.com/ArkEcosystemArchive/cpp-crypto" target="_blank">ARK C++ Crypto SDK</a></li>
-                <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/docs" target="_blank">ARK Documentation</a></li>
+                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/ledger" target="_blank">ARK Ledger App</a></li>
+                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/ledger-transport" target="_blank">ARK Ledger Transport</a></li>
+                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystemArchive/cpp-client" target="_blank">ARK C++ Client SDK</a></li>
+                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystemArchive/cpp-crypto" target="_blank">ARK C++ Crypto SDK</a></li>
+                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/docs" target="_blank">ARK Documentation</a></li>
                 </li>
                 <li class="bullet">Provided developer and end-user support</li>
-                <li class="bullet">Authored various technical and marketing blog posts</li>
+                <li class="bullet">Authored various technical and marketing blog posts
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/the-scalability-trilemma">'The Scalability Trilemma'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/scaling-peeling-back-the-layers">'Scaling: Peeling Back the Layers'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/the-top-nft-tech-of-2021">'The Top NFT Tech of 2021'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/bloomberg-interview-recap-an-ethereum-geek-makes-valid-arguments">'Bloomberg Interview Recap: An Ethereum Geek Makes Valid Arguments'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/pussy-riot-bringing-about-radical-change-with-nfts">'Pussy Riot - Bringing About Radical Change with NFTs'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/cryptomories-nfts-with-heart-and-soul">'CryptoMories - NFTs with Heart and Soul'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/expressive-emotive-nfts-gavin-meeler">'Expressive, Emotive NFTs - Gavin Meeler'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/making-deals-with-the-nft-devil-blood-pact">'Making Deals with the NFT Devil - Blood Pact'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/nft-communities-the-good-the-bad-and-the-ugly">'NFT Communities - The Good, the Bad, and the Ugly'</a>
+                  </li>
+                  <li class="bullet article">
+                    <a href="https://marketsquare.io/blog/propel-does-a-metaverse-toolbox-matter">'Propel - Does a Metaverse Toolbox Matter?'</a>
+                  </li>
+                </li>
               </ul>
             </div>
             <div class="col-sm-12">
               <h4 class="strike-through">
                 <span>ARK Labs</span>
               </h4>
-              <span class="date">
-                2017-08 - 2018-04
-              </span>
               <div class="position">
-                Developer
+                Developer &ensp;|&ensp;
+                  <span class="date">
+                    2017-08 - 2018-04
+                  </span>
               </div>
+                            
               <div class="summary">
                 <p>ARK/IoT Concept Research and Development</p>
               </div>
@@ -354,66 +368,66 @@
               <h4 class="strike-through">
                 <span>ARK Community Committee</span>
               </h4>
-              <span class="date">
-                Fall 2017 - Spring 2018
-              </span>
               <div class="position">
-                Board Member
+                Board Member &ensp;|&ensp;
+                  <span class="date">
+                    Fall 2017 - Spring 2018
+                  </span>
               </div>
             </div>
             <div class="col-sm-12">
               <h4 class="strike-through">
                 <span>HackPrinceton</span>
               </h4>
-              <span class="date">
-                <a href="https://ark.io/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog">Fall 2018</a>
-              </span>
               <div class="position">
-                Mentor
+                Mentor &ensp;|&ensp;
+                <span class="date">
+                  <a href="https://ark.io/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog">Fall 2018</a>
+                </span>
               </div>
             </div>
             <div class="col-sm-12">
               <h4 class="strike-through">
                 <span>HackPHS</span>
               </h4>
-              <span class="date">
-                <a href="https://ark.io/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog">Fall 2018</a>
-              </span>
               <div class="position">
-                Mentor
+                Mentor &ensp;|&ensp;
+                <span class="date">
+                  <a href="https://ark.io/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog">Fall 2018</a>
+                </span>
               </div>
             </div>
             <div class="col-sm-12">
               <h4 class="strike-through">
                 <span>Blockhack</span>
               </h4>
-              <span class="date">
-                <a href="https://ark.io/blog/delaware-here-we-come-title-sponsor-at-the-blockhack-hackathon">Spring 2018</a>
-              </span>
               <div class="position">
-                Mentor
+                Mentor &ensp;|&ensp;
+                <span class="date">
+                  <a href="https://ark.io/blog/delaware-here-we-come-title-sponsor-at-the-blockhack-hackathon">Spring 2018</a>
+                </span>
               </div>
             </div>
             <div class="col-sm-12">
               <h4 class="strike-through">
                 <span>HackPrinceton</span>
               </h4>
-              <span class="date">
-                <a href="https://ark.io/blog/ark-sponsoring-hackprinceton-spring-2018-arkio-blog">Spring 2018</a>
-              </span>
               <div class="position">
-                Mentor
+                Mentor &ensp;|&ensp;
+                <span class="date">
+                  <a href="https://ark.io/blog/ark-sponsoring-hackprinceton-spring-2018-arkio-blog">Spring 2018</a>
+                </span>
               </div>
             </div>
             <div class="col-sm-12">
               <h4 class="strike-through">
                 <span>HackPrinceton</span>
               </h4>
-              <span class="date">
-                <a href="https://ark.io/blog/ark-sponsoring-iot-hackathon-at-princeton-university">Fall 2017</a>
-              </span>
               <div class="position">
-                Mentor
+                Mentor &ensp;|&ensp;
+                <span class="date">
+                  <a href="https://ark.io/blog/ark-sponsoring-iot-hackathon-at-princeton-university">Fall 2017</a>
+                </span>
               </div>
             </div>
           </div>
