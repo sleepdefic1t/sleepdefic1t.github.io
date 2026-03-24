@@ -1,580 +1,254 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
-    		<link rel="stylesheet" href="debug-.css">
+    <meta name="color-scheme" content="dark">
+    <title>Simon Downey — Resume</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
 
-    <title>Simon Downey</title>
+```
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script src="/cdn-cgi/apps/head/QEWNwoPSl2O5LqMXvi595gsiMPg.js"></script>
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-74754546-2"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" />
-
-    <style type="text/css">
-      @import url(https://fonts.googleapis.com/css?family=Lato:400, 700);
-      body {
-        background: #333;
-        font-family: Lato, sans-serif;
-        margin: 0 0 80px;
-      }
-      .avatar {
-        border-radius: 50%;
-        height: 100px;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-top: -15px;
-        width: 100px;
-        float: left;
-      }
-      a {
-        color: #2ecc71;
-        text-decoration: underline; 
-      }
-      a:focus,
-      a:hover {
-        color: #f1c40f;
-      }
-      p {
-        line-height: 1.5;
-        margin: 0;
-      }
-      p + p {
-        margin-top: 10px;
-      }
-      h1,
-      h2,
-      h3,
-      h4 {
-        margin-top: 0;
-      }
-      section {
-        color: white; 
-        margin-top: 30px;
-      }
-      li {
-        line-height: 1.8;
-        list-style: none;
-      }
-      li:before {
-        content: "\f052";
-        float: left;
-        font: 13px Octicons;
-        margin-top: 6px;
-        margin-left: -20px;
-        opacity: 0.1;
-        position: absolute;
-      }
-      .maintained {
-        text-indent: 10px;
-      }
-      .article {
-        text-indent: 10px;
-        font-style: italic;  
-      }
-      blockquote {
-        border-left: 5px solid #e7e9ec;
+    html {
+        background: #000000 !important;
+        color: #ffffff !important;
+        font-family: "JetBrains Mono", monospace;
         font-size: 14px;
-      }
-      em {
-        color: #95a5a6;
-        font-weight: normal;
-        font-style: normal;
-      }
-      h4 span:first-child {
-        color: #95a5a6;
-        font-weight: bold;
-      }
-      .container {
-        max-width: 750px;
-        padding: 0 30px;
-      }
-      .col-sm-6 {
-        margin-bottom: 10px;
-      }
-      .col-sm-12 h4 {
-        margin-top: 12px;
-      }
-      .col-sm-12 + .col-sm-12 {
-        margin-top: 30px;
-      }
-      #header {
-        color: black;
-        background: #f4f6f6;
-        padding: 40px 0;
-      }
-      #header h2 {
-        color: #95a5a6;
-        font-size: 24px;
-        justify-content: center;
-      }
-      #content h3 {
-        color: #f1c40f;
-        font-size: 26px;
-        margin-top: -4px;
-      }
-      #content h4 {
-        color: #f1c40f;
-      }
-      #content aside {
-        text-align: right;
-        padding-right: 30px;
-      }
-      #profiles .network {
-        text-transform: capitalize;
-      }
-      #work .position,
-      #volunteer .position,
-      #references .position {
-        font-weight: bold;
-        margin-bottom: 8px;
-      }
-      #publications .website a:before {
-        content: attr(href);
-      }
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+    }
 
-      @media (min-width: 480px) {
-        .strike-through {
-          border-top: 1px solid #f4f6f6;
-          height: 30px;
-          margin-top: 12px;
-          margin-bottom: -2px;
-          position: relative;
-        }
-        .strike-through span,
-        .strike-through a {
-          background: #333;
-          position: absolute;
-        }
-        .strike-through span:first-child {
-          padding-right: 20px;
-          margin-top: -12px;
-        }
-        .strike-through span + span {
-          font-size: 14px;
-          margin-top: -10px;
-          padding-left: 20px;
-          right: 0;
-        }
-      }
-      @media (max-width: 768px) {
-        .col-sm-6:last-child {
-          margin-bottom: 0px;
-        }
-        #content aside {
-          margin-bottom: 20px;
-          padding-right: 0;
-          text-align: left;
-        }
-        #publications .website a:before {
-          content: "View publication";
-        }
-      }
-      @media (max-width: 480px) {
-        h1 {
-          font-size: 26px;
-        }
-        .date {
-          font-size: 14px;
-          margin-bottom: 5px;
-        }
-        .strike-through span:first-child {
-          margin-bottom: 7px;
-        }
-        .strike-through span {
-          display: block;
-        }
-        #actions {
-          display: none;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header id="header">
-      <div class="container">
-        <img class="avatar" src="https://ipfs.io/ipfs/Qmcdtiqgd8RLkrbhRDsQbdQDPMu9EsKnYE6Y5JFsZPUGQY">
-        <h1>Simon Downey</h1>
-        <h2>Developer</h2>
-      </div>
-    </header>
-    <div id="content" class="container">
-      <section id="contact" class="row">
-        <aside class="col-sm-3">
-          <h3>Contact</h3>
-        </aside>
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-sm-6">
-              <strong>Email</strong>
-              <div class="email"><a href="mailto:sl33p.eth@pm.me">sl33p.eth@pm.me</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
- 
-      <section id="about" class="row">
-        <aside class="col-sm-3">
-          <h3>About</h3>
-        </aside>
-        <div class="col-sm-9">
-          <p>
-            Hello! I'm a crypto dev and technical writer. When I'm not busy programming microcontrollers, documenting Blockchain software, and saving the world from centralization, I enjoy creating music and exploring the latest technological trends.
-          </p>
-        </div>
-      </section>
- 
-      <section id="social" class="row">
-        <aside class="col-sm-3">
-          <h3>Social</h3>
-        </aside>
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-sm-6">
-              <strong class="network">
-                GitHub
-              </strong>
-              <div class="username">
-                <div class="url">
-                  <a href="https://github.com/sleepdefic1t" target="_blank">github.com/sleepdefic1t</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <strong class="network">
-                Mirror Blog
-              </strong>
-              <div class="username">
-                <div class="url">
-                  <a href="https://mirror.xyz/sl33p.eth" target="_blank">mirror.xyz/sl33p.eth</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <strong class="network">
-                Twitter
-              </strong>
-              <div class="username">
-                <div class="url">
-                  <a href="https://twitter.com/sleepdefic1t" target="_blank">twitter.com/sleepdefic1t</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <strong class="network">
-                LinkedIn
-              </strong>
-              <div class="username">
-                <div class="url">
-                  <a href="https://www.linkedin.com/in/sleepdefic1t" target="_blank">linkedin.com/in/sleepdefic1t</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    body {
+        background: #000000 !important;
+        color: #ffffff !important;
+        max-width: 72ch;
+        margin: 3rem auto;
+        padding: 0 2rem;
+        min-height: 100vh;
+    }
 
-      <section id="work" class="row">
-        <aside class="col-sm-3">
-          <h3>Work</h3>
-        </aside>
-        <div class="col-sm-9">
-          <div class="row">
+    h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+        letter-spacing: -0.02em;
+    }
+    h1::before {
+        content: "# ";
+        color: rgba(255,255,255,0.5);
+        font-weight: 400;
+    }
 
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>
-                  <a href="https://solar.org" target="_blank">Solar Network</a>
-                </span>
-              </h4>
-              <div class="position">
-                Developer &ensp;|&ensp;
-                  <span class="date">
-                    2022-04 - current
-                  </span>
-              </div>
-              <div class="summary">
-                <p></p>
-              </div>
-              <h4>
-                Highlights
-              </h4>
-              <ul class="highlights">
-                <li class="bullet">Maintained:
-                  <li class="bullet maintained"><a href="https://github.com/Solar-network/ledger-app-solar" target="_blank">Solar Ledger App</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/Solar-network/python-client" target="_blank">Solar Python Client SDK</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/Solar-network/python-crypto" target="_blank">Solar Python Crypto SDK</a></li>
-                </li>
-                <li class="bullet">Contributed:
-                  <li class="bullet maintained"><a href="https://github.com/Solar-network/core" target="_blank">Solar Core</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/Solar-network/desktop-wallet" target="_blank">Solar Desktop Wallet</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/Solar-network/docs" target="_blank">Solar Documentation</a></li>
-                </li>
-                <li class="bullet">Provided end-user support</li>
-                <li class="bullet">Alpha/Beta tested end-user products</li>
-                <li class="bullet">Advised on protocol-level decisions
-                </li>
-              </ul>
-            </div>
- 
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>
-                  <a href="https://ark.io/blog/arks-newest-addition-to-the-hardware-and-iot-development-team" target="_blank">ARK Ecosystem</a>
-                </span>
-              </h4>
-              <div class="position">
-                IoT Lead / Developer / Writer &ensp;|&ensp;
-                  <span class="date">
-                    2018-04 - 2022-03
-                  </span>
-              </div>
-              <div class="summary">
-                <p></p>
-              </div>
-              <h4>
-                Highlights
-              </h4>
-              <ul class="highlights">
-                <li class="bullet">Maintained:
-                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/ledger" target="_blank">ARK Ledger App</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/ledger-transport" target="_blank">ARK Ledger Transport</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystemArchive/cpp-client" target="_blank">ARK C++ Client SDK</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystemArchive/cpp-crypto" target="_blank">ARK C++ Crypto SDK</a></li>
-                  <li class="bullet maintained"><a href="https://github.com/ArkEcosystem/docs" target="_blank">ARK Documentation</a></li>
-                </li>
-                <li class="bullet">Provided developer and end-user support</li>
-                <li class="bullet">Authored various technical and marketing blog posts
-                </li>
-              </ul>
-            </div>
- 
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>ARK Labs</span>
-              </h4>
-              <div class="position">
-                Developer &ensp;|&ensp;
-                  <span class="date">
-                    2017-08 - 2018-04
-                  </span>
-              </div>
-              <div class="summary">
-                <p>ARK/IoT Concept Research and Development</p>
-              </div>
-            </div>
+    h2 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-top: 2.5rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    h2::before {
+        content: "## ";
+        color: rgba(255,255,255,0.5);
+        font-weight: 400;
+    }
 
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>
-                  Independent
-                </span>
-              </h4>
-              <div class="position">
-                Developer&ensp;|&ensp;
-                  <span class="date">
-                    2017 - current
-                  </span>
-              </div>
-              <div class="summary">
-                <p>Embedded/IoT, Blockchain, and Misc. Software Development</p>
-              </div>
-              <h4>
-                Highlights
-              </h4>
-              <ul class="highlights">
-                <li class="bullet"><a href="https://github.com/sleepdefic1t/ARKKit" target="_blank">ARKKit</a> (Swift)</li>
-                <li class="bullet"><a href="https://github.com/sleepdefic1t/ARK-Ledger-APDU-Tool" target="_blank">ARK Ledger APDU Tool</a> (React/TS)</li>
-                <li class="bullet"><a href="https://github.com/sleepdefic1t/bcl" target="_blank">bcl: Bitcoin Cryptography Lib</a> (C++)</li>
-                <!-- <li class="bullet"><a href="https://github.com/sleepdefic1t/app-bind" target="_blank">BIND Ledger App</a> (C)</li> -->
-                <li class="bullet"><a href="https://github.com/sleepdefic1t/BIP66" target="_blank">BIP66</a> (C++)</li>
-                <li class="bullet"><a href="https://github.com/sleepdefic1t/c-crypto-primitives/tree/develop" target="_blank">Crypto Primitives</a> (C)</li> 
-                <li class="bullet"><a href="https://github.com/sleepdefic1t/Ledger-BIP-44-Path-Tool" target="_blank">Ledger BIP 44 Path Tool</a> (React/TS)</li>
-              </ul>
-            </div>
-  
-          </div>
-        </div>
-      </section>
+    h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        margin-bottom: 0.15rem;
+    }
+    h3::before {
+        content: "### ";
+        color: rgba(255,255,255,0.5);
+        font-weight: 400;
+    }
 
-      <section id="volunteer" class="row">
-        <aside class="col-sm-3">
-          <h3>Volunteer</h3>
-        </aside>
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>ARK Community Committee</span>
-              </h4>
-              <div class="position">
-                Board Member &ensp;|&ensp;
-                  <span class="date">
-                    Fall 2017 - Spring 2018
-                  </span>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>HackPrinceton</span>
-              </h4>
-              <div class="position">
-                Mentor &ensp;|&ensp;
-                <span class="date">
-                  <a href="https://ark.io/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog" target="_blank">Fall 2018</a>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>HackPHS</span>
-              </h4>
-              <div class="position">
-                Mentor &ensp;|&ensp;
-                <span class="date">
-                  <a href="https://ark.io/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog" target="_blank">Fall 2018</a>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>Blockhack</span>
-              </h4>
-              <div class="position">
-                Mentor &ensp;|&ensp;
-                <span class="date">
-                  <a href="https://ark.io/blog/delaware-here-we-come-title-sponsor-at-the-blockhack-hackathon" target="_blank">Spring 2018</a>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>HackPrinceton</span>
-              </h4>
-              <div class="position">
-                Mentor &ensp;|&ensp;
-                <span class="date">
-                  <a href="https://ark.io/blog/ark-sponsoring-hackprinceton-spring-2018-arkio-blog" target="_blank">Spring 2018</a>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>HackPrinceton</span>
-              </h4>
-              <div class="position">
-                Mentor &ensp;|&ensp;
-                <span class="date">
-                  <a href="https://ark.io/blog/ark-sponsoring-iot-hackathon-at-princeton-university" target="_blank">Fall 2017</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    hr {
+        border: none;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        margin: 0.5rem 0 0.25rem;
+    }
 
-      <section id="articles" class="row">
-        <aside class="col-sm-3">
-          <h3>Articles</h3>
-        </aside>
-        <div class="col-sm-9">
-          <h4 class="strike-through"></h4>
-          <div class="row">
-            <div class="col-sm-12">
-              <li class="bullet article">
-                <a href="https://mirror.xyz/sl33p.eth/hfLcE9xOrnoUIbQDDtOOmnRJ60DoTJdkpyOCFOUtQB0" target="_blank">'The Scalability Trilemma'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://mirror.xyz/sl33p.eth/mIKr2J1T6izLh6RFCSaVrl1r9Xq3EEBiahhQKCt3BQw" target="_blank">'Scaling: Peeling Back the Layers'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://marketsquare.io/blog/the-top-nft-tech-of-2021" target="_blank">'The Top NFT Tech of 2021'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://marketsquare.io/blog/pussy-riot-bringing-about-radical-change-with-nfts" target="_blank">'Pussy Riot - Bringing About Radical Change with NFTs'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://marketsquare.io/blog/cryptomories-nfts-with-heart-and-soul" target="_blank">'CryptoMories - NFTs with Heart and Soul'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://marketsquare.io/blog/expressive-emotive-nfts-gavin-meeler" target="_blank">'Expressive, Emotive NFTs - Gavin Meeler'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://marketsquare.io/blog/making-deals-with-the-nft-devil-blood-pact" target="_blank">'Making Deals with the NFT Devil - Blood Pact'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://marketsquare.io/blog/nft-communities-the-good-the-bad-and-the-ugly" target="_blank">'NFT Communities - The Good, the Bad, and the Ugly'</a>
-              </li>
-              <li class="bullet article">
-                <a href="https://marketsquare.io/blog/propel-does-a-metaverse-toolbox-matter" target="_blank">'Propel - Does a Metaverse Toolbox Matter?'</a>
-              </li>
-            </div>
-          </div>
-        </div>
-      </section> 
+    p { margin: 0.5rem 0; }
 
-      <section id="languages" class="row">
-        <aside class="col-sm-3">
-          <h3>Languages & Tools</h3>
-        </aside>
-        <div class="col-sm-9">
-          <h4 class="strike-through"></h4>
-          <div class="row">
-            <div class="col-sm-12">
-              <div style="align-content: left;">
-                  <img alt="Arduino" width="52px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="C" width="52px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="C++" width="52px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="CSS3" width="52px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="GitHub" width="52px" src="https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="Hardhat" width="52px" src="https://c.gitcoin.co/grants/32b6fabb70180e949a0490be4d9f1a2d/Hardhat-color-logotype-vertical.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="HTML5" width="52px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="PlatformIO" width="52px" src="https://raw.githubusercontent.com/platformio/platformio-vscode-ide/69bfc19bae633213c6d5455b47cb22efb2dcfed4/resources/platformio-logo.png" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="Python" width="52px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="Raspberry Pi" width="40px" src="https://static.cdnlogo.com/logos/r/98/raspberry-pi.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="React" width="52px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="Solidity" width="52px" src="https://raw.githubusercontent.com/sleepdefic1t/sleepdefic1t/master/icons/solidity-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="TypeScript" width="52px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-                  <img alt="Visual Studio Code" width="52px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right: 10px; margin-top: 5px;" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    .subtitle {
+        color: rgba(255,255,255,0.5);
+        margin-bottom: 0.5rem;
+    }
+    .subtitle strong { color: #ffffff; }
 
-      <section id="references" class="row">
-        <aside class="col-sm-3">
-          <h3>References</h3>
-        </aside>
-        <div class="col-sm-9">
-          <div class="row">
-            <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>Ray Alvarez</span>
-              </h4>
-              <div class="position">
-                CEO / President, ARK Ecosystem SCIC
-              </div>
-                <span>
-                  While working at ARK, Simon was an invaluable member of our team and performed admirably. We can attest that Simon served as a highly qualified and successful Internet of Things Lead while under contract with our company and would be a great addition to any team.
-                </span>
-            </div>
-             <div class="col-sm-12">
-              <h4 class="strike-through">
-                <span>Brynn Huxtable</span>
-              </h4>
-              <div class="position">
-                Content Manager, ARK Ecosystem SCIC
-              </div>
-                <span>
-                  I had the pleasure of working alongside Simon who helped mentor and guide me in the creation of numerous cryptoasset articles despite my lack of experience and deeper knowledge of blockchain technology. He has always been cheerful, enthusiastic, and caring. He takes great pride in what he does and was nothing short of an asset to the smaller team I was involved in as well as the company as a whole.
-                </span>
-            </div>
-          </div>
-        </div>
-      </section>
- 
-    </div>
-  </body>
+    .role {
+        color: rgba(255,255,255,0.7);
+        margin-bottom: 0.5rem;
+    }
+    .role em { color: rgba(255,255,255,0.5); }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0.35rem 0;
+    }
+
+    li {
+        padding-left: 1.5em;
+        position: relative;
+        margin: 0.2rem 0;
+    }
+    li::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+        color: rgba(255,255,255,0.5);
+    }
+
+    li ul { margin: 0.15rem 0 0.15rem 0; }
+    li li { padding-left: 1.5em; }
+    li li::before { content: "-"; color: rgba(255,255,255,0.3); }
+
+    a {
+        color: #ffffff;
+        text-decoration: underline;
+        text-decoration-color: rgba(255,255,255,0.3);
+        text-underline-offset: 2px;
+        transition: text-decoration-color 0.2s;
+    }
+    a:hover { text-decoration-color: #ffffff; }
+
+    strong { font-weight: 700; }
+    em { font-style: italic; color: rgba(255,255,255,0.85); }
+
+    .entry { margin-bottom: 1.25rem; }
+    .vol-entry { margin-bottom: 0.75rem; }
+
+    @media print {
+        html { font-size: 11px; }
+        body { margin: 1rem; }
+        a { text-decoration: none; }
+        a::after { content: " (" attr(href) ")"; font-size: 0.8em; color: rgba(255,255,255,0.5); }
+    }
+</style>
+```
+
+</head>
+<body>
+
+<h1>Simon Downey</h1>
+<p class="subtitle"><strong>Consensus Engineer</strong> — USA</p>
+<hr>
+
+<h2>Contact</h2>
+<p><strong>Email</strong>: <a href="mailto:sl33p.eth@pm.me">sl33p.eth@pm.me</a></p>
+
+<h2>Social</h2>
+<ul>
+    <li><strong>Blog</strong>: <a href="https://paragraph.com/@sl33p">paragraph.com/@sl33p</a></li>
+    <li><strong>GitHub</strong>: <a href="https://github.com/sleepdefic1t">github.com/sleepdefic1t</a></li>
+    <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/sleepdefic1t">linkedin.com/in/sleepdefic1t</a></li>
+    <li><strong>Twitter</strong>: <a href="https://x.com/sleepdefic1t">x.com/sleepdefic1t</a></li>
+</ul>
+
+<h2>Work</h2>
+
+<div class="entry">
+    <h3>Monolythium</h3>
+    <p class="role">Core Lead / Consensus Engineer | <em>2025 — current</em></p>
+    <ul>
+        <li>Led technical development
+            <ul>
+                <li>LythiumBFT (CometBFT fork) with Quadratic Proposer Selection</li>
+                <li>Mono-chain - Cosmos chain w/custom modules + EVM integration</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="entry">
+    <h3>Solar Network</h3>
+    <p class="role">Blockchain Engineer | <em>2022 — 2025</em></p>
+    <ul>
+        <li>Technical lead for 20+ centralized exchange integrations</li>
+        <li>Identified and mitigated critical security threats</li>
+        <li>Evaluated chain migration strategies (Avalanche, Cosmos SDK)</li>
+        <li>Created Solar Ledger App — Kudelski audited</li>
+    </ul>
+</div>
+
+<div class="entry">
+    <h3><a href="https://arkscic.com/blog/arks-newest-addition-to-the-hardware-and-iot-development-team">ARK Ecosystem</a></h3>
+    <p class="role">IoT Lead | <em>2017 — 2022</em></p>
+    <ul>
+        <li>Provided developer and end-user support</li>
+        <li>Authored various technical and marketing blog posts</li>
+        <li>ARK/IoT Concept Research and Development</li>
+        <li>Technical representative at international conferences (Geneva, NYC, San Francisco, Seoul)</li>
+        <li>Maintained:
+            <ul>
+                <li><a href="https://github.com/ArkEcosystem/ledger">ARK Ledger App</a></li>
+                <li><a href="https://github.com/ArkEcosystem/ledger-transport">ARK Ledger Transport</a></li>
+                <li><a href="https://github.com/ArkEcosystemArchive/cpp-client">ARK C++ Client SDK</a></li>
+                <li><a href="https://github.com/ArkEcosystemArchive/cpp-crypto">ARK C++ Crypto SDK</a></li>
+                <li><a href="https://github.com/ArkEcosystem/docs">ARK Documentation</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="entry">
+    <h3>Independent</h3>
+    <p class="role">Developer | <em>2017 — current</em></p>
+    <p>Embedded/IoT, Blockchain, and Misc. Software Development and Block Producer.</p>
+    <ul>
+        <li><a href="https://github.com/sleepdefic1t/ARKKit">ARKKit</a> (Swift)</li>
+        <li><a href="https://github.com/sleepdefic1t/ARK-Ledger-APDU-Tool">ARK Ledger APDU Tool</a> (React/TS)</li>
+        <li><a href="https://github.com/sleepdefic1t/bcl">bcl: Bitcoin Cryptography Lib</a> (C++)</li>
+        <li><a href="https://github.com/sleepdefic1t/BIP66">BIP66</a> (C++)</li>
+        <li><a href="https://github.com/sleepdefic1t/c-crypto-primitives/tree/develop">Crypto Primitives</a> (C)</li>
+        <li><a href="https://github.com/sleepdefic1t/Ledger-BIP-44-Path-Tool">Ledger BIP 44 Path Tool</a> (React/TS)</li>
+    </ul>
+</div>
+
+<h2>Volunteer</h2>
+
+<div class="vol-entry">
+    <h3>ARK Community Committee</h3>
+    <p><strong>Board Member</strong>: 2017 — 2018</p>
+</div>
+
+<div class="vol-entry">
+    <h3>Blockhack</h3>
+    <p><strong>Mentor</strong>: <a href="https://arkscic.com/blog/delaware-here-we-come-title-sponsor-at-the-blockhack-hackathon">Spring 2018</a></p>
+</div>
+
+<div class="vol-entry">
+    <h3>HackPHS</h3>
+    <p><strong>Mentor</strong>: <a href="https://arkscic.com/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog">Fall 2018</a></p>
+</div>
+
+<div class="vol-entry">
+    <h3>HackPrinceton</h3>
+    <p><strong>Mentor</strong>:</p>
+    <ul>
+        <li><a href="https://arkscic.com/blog/ark-sponsoring-iot-hackathon-at-princeton-university">Fall 2017</a></li>
+        <li><a href="https://arkscic.com/blog/ark-sponsoring-hackprinceton-spring-2018-arkio-blog">Spring 2018</a></li>
+        <li><a href="https://arkscic.com/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog">Fall 2018</a></li>
+    </ul>
+</div>
+
+<h2>Articles</h2>
+<ul>
+    <li><a href="https://paragraph.com/@sl33p/the-scalability-trilemma"><em>'The Scalability Trilemma'</em></a></li>
+    <li><a href="https://paragraph.com/@sl33p/scaling-peeling-back-the-layers"><em>'Scaling: Peeling Back the Layers'</em></a></li>
+    <li><a href="https://paragraph.com/@sl33p/cryptomories-nfts-with-heart-and-soul"><em>'CryptoMories — NFTs with Heart and Soul'</em></a></li>
+    <li><a href="https://paragraph.com/@sl33p/expressive-emotive-nfts-gavin-meeler"><em>'Expressive, Emotive NFTs — Gavin Meeler'</em></a></li>
+</ul>
+
+<h2>Languages &amp; Tools</h2>
+<p>C, C++, Claude Code, Go, Hardhat, Python, Solidity, TypeScript</p>
+
+</body>
 </html>
