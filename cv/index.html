@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
-    <meta name="color-scheme" content="dark">
-    <title>Simon Downey — Resume</title>
-    <style>
-        @import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <meta name="color-scheme" content="dark">
+  <title>Simon Downey - CV</title>
+  <style>
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("../fonts/JetBrainsMono-Italic.ttf") format("truetype");
+      font-weight: 400;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -26,7 +42,6 @@
         max-width: 72ch;
         margin: 3rem auto;
         padding: 0 2rem;
-        min-height: 100vh;
     }
 
     h1 {
@@ -67,6 +82,10 @@
         font-weight: 400;
     }
 
+    h2 + h3 {
+        margin-top: 0.75rem;
+    }
+
     hr {
         border: none;
         border-top: 1px solid rgba(255,255,255,0.3);
@@ -75,17 +94,17 @@
 
     p { margin: 0.5rem 0; }
 
-    .subtitle {
+    h1 + p {
         color: rgba(255,255,255,0.5);
         margin-bottom: 0.5rem;
     }
-    .subtitle strong { color: #ffffff; }
+    h1 + p strong { color: #ffffff; }
 
-    .role {
+    h3 + p {
         color: rgba(255,255,255,0.7);
         margin-bottom: 0.5rem;
     }
-    .role em { color: rgba(255,255,255,0.5); }
+    h3 + p em { color: rgba(255,255,255,0.5); }
 
     ul {
         list-style: none;
@@ -121,137 +140,139 @@
     strong { font-weight: 700; }
     em { font-style: italic; color: rgba(255,255,255,0.85); }
 
-    .entry { margin-bottom: 1.25rem; }
-    .vol-entry { margin-bottom: 0.75rem; }
-
-    @media print {
-        html { font-size: 11px; }
-        body { margin: 1rem; }
-        a { text-decoration: none; }
-        a::after { content: " (" attr(href) ")"; font-size: 0.8em; color: rgba(255,255,255,0.5); }
+    .downloads {
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        color: rgba(255,255,255,0.5);
+        font-size: 0.9rem;
+        text-align: center;
     }
-</style>
-
+    .downloads a {
+        color: rgba(255,255,255,0.7);
+    }
+  </style>
 </head>
 <body>
-
-<h1>Simon Downey</h1>
-<p class="subtitle"><strong>Consensus Engineer</strong> — USA</p>
-<hr>
-
-<h2>Contact</h2>
-<p><strong>Email</strong>: <a href="mailto:sl33p.eth@pm.me">sl33p.eth@pm.me</a></p>
-
-<h2>Social</h2>
-<ul>
-    <li><strong>Blog</strong>: <a href="https://paragraph.com/@sl33p" target="_blank" rel="noopener noreferrer">paragraph.com/@sl33p</a></li>
-    <li><strong>Bluesky</strong>: <a href="https://bsky.app/profile/sl33p.bsky.social" target="_blank" rel="noopener noreferrer">sl33p.bsky.social</a></li>
-    <li><strong>GitHub</strong>: <a href="https://github.com/sleepdefic1t" target="_blank" rel="noopener noreferrer">github.com/sleepdefic1t</a></li>
-    <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/sleepdefic1t" target="_blank" rel="noopener noreferrer">linkedin.com/in/sleepdefic1t</a></li>
-    <li><strong>Twitter</strong>: <a href="https://x.com/sleepdefic1t" target="_blank" rel="noopener noreferrer">x.com/sleepdefic1t</a></li>
-</ul>
-
-<h2>Work</h2>
-
-<div class="entry">
-    <h3>Monolythium</h3>
-    <p class="role">Core Engineering Lead | <em>2025 — 2026</em></p>
-    <ul>
-        <li>Researched, designed and implemented:
-            <ul>
-                <li><a href="https://github.com/sleepdefic1t/mono-chain" target="_blank" rel="noopener noreferrer">Mono-chain</a> - A Cosmos-based chain w/custom modules + EVM integration</li> 
-                <li><a href="https://github.com/sleepdefic1t/lythiumbft" target="_blank" rel="noopener noreferrer">LythiumBFT</a> - A CometBFT fork</li> 
-                <li><a href="https://github.com/sleepdefic1t/lythiumbft/commit/36592a9408867cd8750f95e6277877e43c7617b8" target="_blank" rel="noopener noreferrer">'Quadratic Proposer Selection'</a> - a priority-based 'concentration tax' on stake dominance</li> 
-            </ul>
+  <h1 id="simon-downey">Simon Downey</h1>
+  <p><strong>Consensus Engineer</strong> — USA</p>
+  <hr>
+  <h2 id="work">Work</h2>
+  <h3 id="monolythium">Monolythium</h3>
+  <p>Core Engineering Lead | <em>2025 — 2026</em></p>
+  <ul>
+    <li>Researched, designed and implemented:
+      <ul>
+        <li>
+          <a href="https://github.com/sleepdefic1t/mono-chain" target="_blank" rel="noopener noreferrer">Mono-chain</a> - A Cosmos-based chain w/custom modules + EVM integration
         </li>
-        <li>Launched the Monolythium v1 testnet - 1.3M blocks in 3 months, no protocol failures</li>
-    </ul>
-</div>
-
-<div class="entry">
-    <h3>Solar Network</h3>
-    <p class="role">Blockchain Engineer | <em>2022 — 2025</em></p>
-    <ul>
-        <li>Advised and directed protocol development</li>
-        <li>Led technical integration for 20+ centralized exchanges</li>
-        <li>Established strict SecOps standards</li>
-        <li>Neutralized state-sponsored in/exfil</li>
-        <li>Created <a href="https://github.com/Solar-network/ledger-app-solar" target="_blank" rel="noopener noreferrer">Solar Ledger App</a> - Kudelski audited</li>
-    </ul>
-</div>
-
-<div class="entry">
-    <h3><a href="https://arkscic.com/blog/arks-newest-addition-to-the-hardware-and-iot-development-team" target="_blank" rel="noopener noreferrer">ARK Ecosystem</a></h3>
-    <p class="role">IoT Lead | <em>2017 — 2022</em></p>
-    <ul>
-        <li>Developed embedded crypto architecture</li>
-        <li>Provided technical support to users and developers</li>
-        <li>Authored technical and community blog posts</li>
-        <li>Represented ARK at international conferences (Geneva, NYC, San Francisco, Seoul)</li>
-        <li>Mentored students and provided workshops at hackathons</li>
-        <li>Maintained:
-            <ul>
-                <li><a href="https://github.com/ArkEcosystem/ledger" target="_blank" rel="noopener noreferrer">ARK Ledger App</a></li>
-                <li><a href="https://github.com/ArkEcosystem/ledger-transport" target="_blank" rel="noopener noreferrer">ARK Ledger Transport</a></li>
-                <li><a href="https://github.com/ArkEcosystemArchive/cpp-client" target="_blank" rel="noopener noreferrer">ARK C++ Client SDK</a></li>
-                <li><a href="https://github.com/ArkEcosystemArchive/cpp-crypto" target="_blank" rel="noopener noreferrer">ARK C++ Crypto SDK</a></li>
-                <li><a href="https://github.com/ArkEcosystem/docs" target="_blank" rel="noopener noreferrer">ARK Documentation</a></li>
-            </ul>
+        <li>
+          <a href="https://github.com/sleepdefic1t/lythiumbft" target="_blank" rel="noopener noreferrer">LythiumBFT</a> - A CometBFT fork
         </li>
-    </ul>
-</div>
-<!--
-<div class="entry">
-    <h3>Independent</h3>
-    <p class="role">Developer | <em>2017 — current</em></p>
-    <p>Embedded/IoT, Blockchain, and Misc. Software Development and Block Producer.</p>
-    <ul>
-        <li><a href="https://github.com/sleepdefic1t/ARKKit" target="_blank" rel="noopener noreferrer">ARKKit</a> (Swift)</li>
-        <li><a href="https://github.com/sleepdefic1t/ARK-Ledger-APDU-Tool" target="_blank" rel="noopener noreferrer">ARK Ledger APDU Tool</a> (React/TS)</li>
-        <li><a href="https://github.com/sleepdefic1t/bcl" target="_blank" rel="noopener noreferrer">bcl: Bitcoin Cryptography Lib</a> (C++)</li>
-        <li><a href="https://github.com/sleepdefic1t/BIP66" target="_blank" rel="noopener noreferrer">BIP66</a> (C++)</li>
-        <li><a href="https://github.com/sleepdefic1t/c-crypto-primitives/tree/develop" target="_blank" rel="noopener noreferrer">Crypto Primitives</a> (C)</li>
-        <li><a href="https://github.com/sleepdefic1t/Ledger-BIP-44-Path-Tool" target="_blank" rel="noopener noreferrer">Ledger BIP 44 Path Tool</a> (React/TS)</li>
-    </ul>
-</div>
--->
-<h2>Community</h2>
-
-<div class="vol-entry">
-    <h3>ARK Community Committee</h3>
-    <p><strong>Board Member</strong>: 2017 — 2018</p>
-</div>
-
-<div class="vol-entry">
-    <h3>Blockhack</h3>
-    <p><strong>Mentor</strong>: <a href="https://arkscic.com/blog/delaware-here-we-come-title-sponsor-at-the-blockhack-hackathon" target="_blank" rel="noopener noreferrer">Spring 2018</a></p>
-</div>
-
-<div class="vol-entry">
-    <h3>HackPHS</h3>
-    <p><strong>Mentor</strong>: <a href="https://arkscic.com/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog" target="_blank" rel="noopener noreferrer">Fall 2018</a></p>
-</div>
-
-<div class="vol-entry">
-    <h3>HackPrinceton</h3>
-    <p><strong>Mentor</strong>:</p>
-    <ul>
-        <li><a href="https://arkscic.com/blog/ark-sponsoring-iot-hackathon-at-princeton-university" target="_blank" rel="noopener noreferrer">Fall 2017</a></li>
-        <li><a href="https://arkscic.com/blog/ark-sponsoring-hackprinceton-spring-2018-arkio-blog" target="_blank" rel="noopener noreferrer">Spring 2018</a></li>
-        <li><a href="https://arkscic.com/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog" target="_blank" rel="noopener noreferrer">Fall 2018</a></li>
-    </ul>
-</div>
-
-<h2>Articles</h2>
-<ul>
-    <li><a href="https://paragraph.com/@sl33p/the-scalability-trilemma" target="_blank" rel="noopener noreferrer"><em>'The Scalability Trilemma'</em></a></li>
-    <li><a href="https://paragraph.com/@sl33p/scaling-peeling-back-the-layers" target="_blank" rel="noopener noreferrer"><em>'Scaling: Peeling Back the Layers'</em></a></li>
-    <li><a href="https://paragraph.com/@sl33p/cryptomories-nfts-with-heart-and-soul" target="_blank" rel="noopener noreferrer"><em>'CryptoMories — NFTs with Heart and Soul'</em></a></li>
-    <li><a href="https://paragraph.com/@sl33p/expressive-emotive-nfts-gavin-meeler" target="_blank" rel="noopener noreferrer"><em>'Expressive, Emotive NFTs — Gavin Meeler'</em></a></li>
-</ul>
-
-<h2>Languages</h2>
-<p>C/C++, Go, JS/TS, Python</p>
-
+        <li>
+          <a href="https://github.com/sleepdefic1t/lythiumbft/commit/36592a9408867cd8750f95e6277877e43c7617b8" target="_blank" rel="noopener noreferrer">‘Quadratic Proposer Selection’</a> - a priority-based ‘concentration tax’ on stake dominance
+        </li>
+      </ul>
+    </li>
+    <li>Launched the Monolythium v1 testnet - 1.3M blocks in 3 months</li>
+  </ul>
+  <h3 id="solar-network">Solar Network</h3>
+  <p>Blockchain Engineer | <em>2022 — 2025</em></p>
+  <ul>
+    <li>Advised and directed protocol development</li>
+    <li>Led technical integration for 20+ centralized exchanges</li>
+    <li>Established strict SecOps standards</li>
+    <li>Neutralized state-sponsored in/exfil</li>
+    <li>Created <a href="https://github.com/Solar-network/ledger-app-solar" target="_blank" rel="noopener noreferrer">Solar Ledger App</a> - Kudelski-audited
+    </li>
+  </ul>
+  <h3 id="ark-ecosystem"><a href="https://arkscic.com/blog/arks-newest-addition-to-the-hardware-and-iot-development-team" target="_blank" rel="noopener noreferrer">ARK Ecosystem</a></h3>
+  <p>IoT Lead | <em>2017 — 2022</em></p>
+  <ul>
+    <li>Developed embedded crypto architecture</li>
+    <li>Provided technical support to users and developers</li>
+    <li>Authored technical and community blog posts</li>
+    <li>Represented ARK at international conferences (Geneva, NYC, San Francisco, Seoul)</li>
+    <li>Mentored students and provided workshops at hackathons</li>
+    <li>Maintained:
+      <ul>
+        <li>
+          <a href="https://github.com/ArkEcosystem/ledger" target="_blank" rel="noopener noreferrer">ARK Ledger App</a>
+        </li>
+        <li>
+          <a href="https://github.com/ArkEcosystem/ledger-transport" target="_blank" rel="noopener noreferrer">ARK Ledger Transport</a>
+        </li>
+        <li>
+          <a href="https://github.com/ArkEcosystemArchive/cpp-client" target="_blank" rel="noopener noreferrer">ARK C++ Client SDK</a>
+        </li>
+        <li>
+          <a href="https://github.com/ArkEcosystemArchive/cpp-crypto" target="_blank" rel="noopener noreferrer">ARK C++ Crypto SDK</a>
+        </li>
+        <li>
+          <a href="https://github.com/ArkEcosystem/docs" target="_blank" rel="noopener noreferrer">ARK Documentation</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h2 id="languages">Languages</h2>
+  <p>C/C++, Go, TS</p>
+  <h2 id="community">Community</h2>
+  <h3 id="ark-community-committee">ARK Community Committee</h3>
+  <p><strong>Board Member</strong>: 2017 — 2018</p>
+  <h3 id="blockhack">Blockhack</h3>
+  <p><strong>Mentor</strong>: <a href="https://arkscic.com/blog/delaware-here-we-come-title-sponsor-at-the-blockhack-hackathon" target="_blank" rel="noopener noreferrer">Spring 2018</a></p>
+  <h3 id="hackphs">HackPHS</h3>
+  <p><strong>Mentor</strong>: <a href="https://arkscic.com/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog" target="_blank" rel="noopener noreferrer">Fall 2018</a></p>
+  <h3 id="hackprinceton">HackPrinceton</h3>
+  <p><strong>Mentor</strong>:</p>
+  <ul>
+    <li>
+      <a href="https://arkscic.com/blog/ark-sponsoring-iot-hackathon-at-princeton-university" target="_blank" rel="noopener noreferrer">Fall 2017</a>
+    </li>
+    <li>
+      <a href="https://arkscic.com/blog/ark-sponsoring-hackprinceton-spring-2018-arkio-blog" target="_blank" rel="noopener noreferrer">Spring 2018</a>
+    </li>
+    <li>
+      <a href="https://arkscic.com/blog/ark-hackathons-hackphs-hackprinceton-arkio-blog" target="_blank" rel="noopener noreferrer">Fall 2018</a>
+    </li>
+  </ul>
+  <h2 id="articles">Articles</h2>
+  <ul>
+    <li>
+      <a href="https://paragraph.com/@sl33p/the-scalability-trilemma" target="_blank" rel="noopener noreferrer"><em>‘The Scalability Trilemma’</em></a>
+    </li>
+    <li>
+      <a href="https://paragraph.com/@sl33p/scaling-peeling-back-the-layers" target="_blank" rel="noopener noreferrer"><em>‘Scaling: Peeling Back the Layers’</em></a>
+    </li>
+    <li>
+      <a href="https://paragraph.com/@sl33p/cryptomories-nfts-with-heart-and-soul" target="_blank" rel="noopener noreferrer"><em>‘CryptoMories — NFTs with Heart and Soul’</em></a>
+    </li>
+    <li>
+      <a href="https://paragraph.com/@sl33p/expressive-emotive-nfts-gavin-meeler" target="_blank" rel="noopener noreferrer"><em>‘Expressive, Emotive NFTs — Gavin Meeler’</em></a>
+    </li>
+  </ul>
+  <h2 id="social">Social</h2>
+  <ul>
+    <li>
+      <strong>Blog</strong>: <a href="https://paragraph.com/@sl33p" target="_blank" rel="noopener noreferrer">paragraph.com/@sl33p</a>
+    </li>
+    <li>
+      <strong>Bluesky</strong>: <a href="https://bsky.app/profile/sl33p.bsky.social" target="_blank" rel="noopener noreferrer">sl33p.bsky.social</a>
+    </li>
+    <li>
+      <strong>GitHub</strong>: <a href="https://github.com/sleepdefic1t" target="_blank" rel="noopener noreferrer">github.com/sleepdefic1t</a>
+    </li>
+    <li>
+      <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/sleepdefic1t" target="_blank" rel="noopener noreferrer">linkedin.com/in/sleepdefic1t</a>
+    </li>
+    <li>
+      <strong>Twitter</strong>: <a href="https://x.com/sleepdefic1t" target="_blank" rel="noopener noreferrer">x.com/sleepdefic1t</a>
+    </li>
+  </ul>
+  <h2 id="contact">Contact</h2>
+  <p><strong>Email</strong>: <a href="mailto:sl33p.eth@pm.me">sl33p.eth@pm.me</a></p>
+  <footer class="downloads">
+    <a href="./downey_simon_engineer_cv.md" download="">.md</a> / <a href="./downey_simon_engineer_cv.pdf" download="">.pdf</a>
+  </footer>
 </body>
 </html>

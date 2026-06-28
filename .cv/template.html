@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <meta name="color-scheme" content="dark">
+  <title>$title$</title>
+  <style>
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("../fonts/JetBrainsMono-Italic.ttf") format("truetype");
+      font-weight: 400;
+      font-style: italic;
+    }
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+        background: #000000 !important;
+        color: #ffffff !important;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 14px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        background: #000000 !important;
+        color: #ffffff !important;
+        max-width: 72ch;
+        margin: 3rem auto;
+        padding: 0 2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+        letter-spacing: -0.02em;
+    }
+    h1::before {
+        content: "# ";
+        color: rgba(255,255,255,0.5);
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-top: 2.5rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    h2::before {
+        content: "## ";
+        color: rgba(255,255,255,0.5);
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        margin-bottom: 0.15rem;
+    }
+    h3::before {
+        content: "### ";
+        color: rgba(255,255,255,0.5);
+        font-weight: 400;
+    }
+
+    h2 + h3 {
+        margin-top: 0.75rem;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        margin: 0.5rem 0 0.25rem;
+    }
+
+    p { margin: 0.5rem 0; }
+
+    h1 + p {
+        color: rgba(255,255,255,0.5);
+        margin-bottom: 0.5rem;
+    }
+    h1 + p strong { color: #ffffff; }
+
+    h3 + p {
+        color: rgba(255,255,255,0.7);
+        margin-bottom: 0.5rem;
+    }
+    h3 + p em { color: rgba(255,255,255,0.5); }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0.35rem 0;
+    }
+
+    li {
+        padding-left: 1.5em;
+        position: relative;
+        margin: 0.2rem 0;
+    }
+    li::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+        color: rgba(255,255,255,0.5);
+    }
+
+    li ul { margin: 0.15rem 0 0.15rem 0; }
+    li li { padding-left: 1.5em; }
+    li li::before { content: "-"; color: rgba(255,255,255,0.3); }
+
+    a {
+        color: #ffffff;
+        text-decoration: underline;
+        text-decoration-color: rgba(255,255,255,0.3);
+        text-underline-offset: 2px;
+        transition: text-decoration-color 0.2s;
+    }
+    a:hover { text-decoration-color: #ffffff; }
+
+    strong { font-weight: 700; }
+    em { font-style: italic; color: rgba(255,255,255,0.85); }
+
+    .downloads {
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        color: rgba(255,255,255,0.5);
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .downloads a {
+        color: rgba(255,255,255,0.7);
+    }
+  </style>
+</head>
+<body>
+  $body$
+  <footer class="downloads">
+    <a href="./downey_simon_engineer_cv.md" download="">.md</a> / <a href="./downey_simon_engineer_cv.pdf" download="">.pdf</a>
+  </footer>
+</body>
+</html>
