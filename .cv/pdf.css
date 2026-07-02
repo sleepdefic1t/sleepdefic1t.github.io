@@ -8,18 +8,27 @@ html {
   line-height: 1.4 !important;
   background: #ffffff !important;
   color: #000000 !important;
+  /* Ligatures corrupt the PDF text layer: "++" extracts as "#+". */
+  font-variant-ligatures: none !important;
+  font-feature-settings: "liga" 0, "calt" 0 !important;
 }
 
 body {
   display: flex !important;
   flex-direction: row !important;
+  flex-wrap: wrap !important;
   align-items: flex-start !important;
-  gap: 2.5rem !important;
+  gap: 0 2.5rem !important;
   max-width: none !important;
   margin: 0 !important;
   padding: 1rem 2rem !important;
   background: #ffffff !important;
   color: #000000 !important;
+}
+
+.cv-header {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .cv-main {
@@ -28,12 +37,22 @@ body {
 }
 
 .cv-sidebar {
-  flex: 1 1 auto;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
-.cv-main > :first-child,
-.cv-sidebar > :first-child {
+.cv-header > :first-child {
   margin-top: 2rem !important;
+}
+
+.cv-main > :first-child {
+  margin-top: 0.75rem !important;
+}
+
+/* Half-line phase shift: keeps the columns' line grids misaligned so
+   position-based PDF text extraction detects them as separate columns. */
+.cv-sidebar > :first-child {
+  margin-top: 1.45rem !important;
 }
 
 h2 { margin-top: 1.4rem !important; }
