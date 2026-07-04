@@ -13,8 +13,8 @@ Core Engineering Lead | *2025 — 2026*
 - Researched, designed and implemented:
     - [Mono-chain](https://github.com/sleepdefic1t/mono-chain) - A Cosmos-based chain w/custom modules + EVM integration
     - [LythiumBFT](https://github.com/sleepdefic1t/lythiumbft) - A CometBFT fork
-    - ['Quadratic Proposer Selection'](https://github.com/sleepdefic1t/lythiumbft/commit/36592a9408867cd8750f95e6277877e43c7617b8) - a priority-based 'concentration tax' on stake dominance
-- Launched the Monolythium v1 testnet - 1.3M blocks in 3 months
+    - ['Quadratic Proposer Selection'](https://github.com/sleepdefic1t/quadratic-proposer-selection) - a priority-based 'concentration tax' on stake dominance
+- Launched the Monolythium v1 testnet - 1.39M blocks in 3 months
 
 ### Solar Network
 
