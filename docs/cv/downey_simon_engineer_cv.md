@@ -35,7 +35,7 @@ IoT Lead | *2017 — 2022*
 - Represented ARK at international conferences (Geneva, NYC, San Francisco, Seoul)
 - Mentored students and provided workshops at hackathons
 - Maintained:
-    - [ARK Ledger App](https://github.com/ArkEcosystem/ledger)
+    - [ARK Ledger App](https://github.com/ArkEcosystem/ledger) - cited in [Ledger's security docs](https://web.archive.org/web/20260727070047/https://developers.ledger.com/docs/device-app/integration/requirements/cryptography#private-key-management)
     - [ARK Ledger Transport](https://github.com/ArkEcosystem/ledger-transport)
     - [ARK C++ Client SDK](https://github.com/ArkEcosystemArchive/cpp-client)
     - [ARK C++ Crypto SDK](https://github.com/ArkEcosystemArchive/cpp-crypto)
